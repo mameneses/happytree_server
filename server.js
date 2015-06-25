@@ -75,6 +75,7 @@ router.use(function(req, res, next) {
 });
 
 router.get('/', function (req, res) {
+  console.log('hooray! welcome to our api!')
   res.json({ message: 'hooray! welcome to our api!' });   
 });
 
