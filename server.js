@@ -20,9 +20,9 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 
-var User = require('./models/user')
-var Student = require('./models/student')
-var Assesment = require('./models/assesment')
+  // var User = require('./models/user')
+  // var Student = require('./models/student')
+  // var Assesment = require('./models/assesment')
 
 var router = express.Router();
 
