@@ -1,5 +1,5 @@
 module.exports = {
-  db: process.env.MONGOLAB_URI || 'localhost',
+  db: process.env.db || 'localhost',
   tokenSecret: process.env.tokenSecret || 'the giving tree'
  
 };
