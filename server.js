@@ -9,8 +9,12 @@ var path = require('path');
 var request = require('request');
 
 var config = require('./config');
+
+console.log("before connection @@@@@@@@@@@@@@@@@@@@@")
  
 mongoose.connect(config.db);
+
+console.log("after connection @@@@@@@@@@@@@@@@@@@@@")
 
 var app = express();
 
