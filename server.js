@@ -10,10 +10,6 @@ var request = require('request');
 
 var config = require('./config');
 
-console.log("++++++++++++++++++")
-console.log(process.env.db)
-console.log("++++++++++++++++++")
-console.log(config.db) 
 mongoose.connect(config.db);
 
 var app = express();
@@ -75,8 +71,7 @@ router.use(function(req, res, next) {
 });
 
 router.get('/', function (req, res) {
-  console.log('hooray! welcome to our api!')
-  res.json({ message: 'hooray! welcome to our api!' });   
+  res.json({ message: 'hooray! welcome to the HappyTree-server! Contact Matias at matiasameneses@gmail.com for more inforamtion.' });   
 });
 
 router.route('/users')
@@ -218,7 +213,6 @@ router.route('/users/:user_id')
         user.school = req.body.school
         user.sightWordLists = req.body.sightWordLists
         user.recentAssesments = req.body.recentAssesments
-        user.progressTracker = req.body.progressTracker
         user.classes = req.body.classes
 
         user.save(function() {
