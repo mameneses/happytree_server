@@ -314,6 +314,7 @@ router.route('/assesments')
       percentCorrect: req.body.percentCorrect,
       correctCount: req.body.correctCount,
       incorrectCount: req.body.incorrectCount,
+      correct: req.body.correct,
       missed: req.body.missed
     })
 

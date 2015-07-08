@@ -10,6 +10,7 @@ var schema = new mongoose.Schema({
   percentCorrect: String,
   correctCount: String,
   incorrectCount: String,
+  correct: [],
   missed: []
 })
 
